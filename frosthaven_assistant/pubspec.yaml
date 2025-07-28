@@ -31,7 +31,7 @@ dependencies:
     sdk: flutter
   #shape_of_view: 1.0.2
   #rxdart: ^0.27.3
-  get_it: ^7.2.0
+  get_it: ^8.0.3
   #implicitly_animated_reorderable_list: ^0.4.2
   #great_list_view: ^0.1.4 #is great for simple lists
   #flutter_reorderable_grid_view: ^3.1.1 #maybe this will work well? - or not.
@@ -53,7 +53,7 @@ dependencies:
 
   animated_widgets: ^1.1.0 #for monster death animation
 
-  dotted_border: ^2.0.0+2
+  dotted_border: ^3.1.0
 
   animated_text_kit: ^4.2.2
 
@@ -62,7 +62,7 @@ dependencies:
 
   dart_ipify: ^1.1.1 #get outgoing ip
 
-  connectivity_plus: ^3.0.3 #poll for network changes
+  connectivity_plus: ^6.1.4 #poll for network changes
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
@@ -80,19 +80,19 @@ dependencies:
 
   shared_preferences: ^2.0.15
 
-  wakelock: ^0.6.1+2 #keep awake on android
+  wakelock_plus: ^1.2.8 #keep awake on android - updated from deprecated wakelock
 
-  window_manager: ^0.3.0 #to be able to set fullscreen on windows
+  window_manager: ^0.5.1 #to be able to set fullscreen on windows
 
-  flutter_launcher_icons: ^0.11.0 #I can't believe we need a third party package to do icons..
+  flutter_launcher_icons: ^0.14.4 #I can't believe we need a third party package to do icons..
 
   flutter_native_splash: ^2.2.8 # and same for splash :)
 
   url_launcher: ^6.1.5
 
-  flutter_keyboard_visibility: ^5.3.0 #only way to check for keyboard closed event.
+  flutter_keyboard_visibility: ^6.0.0 #only way to check for keyboard closed event.
 
-  responsive_framework: ^0.2.0
+  responsive_framework: ^1.5.1
 
   override_text_scale_factor: ^1.0.2
 
@@ -115,11 +115,11 @@ dev_dependencies:
   # activated in the `analysis_options.yaml` file located at the root of your
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
-  flutter_lints: ^2.0.1
+  flutter_lints: ^6.0.0
   test: ^1.22.0
   mockito: ^5.3.2
   build_runner: ^2.3.3
-  fluent_assertions: ^0.4.0
+  fluent_assertions: ^0.5.1
   #build_runner: ^2.0.0
   #objectbox_generator: any
 

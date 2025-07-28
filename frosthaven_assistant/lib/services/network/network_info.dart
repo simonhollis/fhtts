@@ -15,7 +15,8 @@ import 'network.dart';
 class NetworkInformation {
   NetworkInformation() {
     _connectivitySubscription =
-        _connectivity.onConnectivityChanged.listen((ConnectivityResult result) {
+        _connectivity.onConnectivityChanged.listen((List<ConnectivityResult> results) {
+          final result = results.isNotEmpty ? results.first : ConnectivityResult.none;
           if (_connectionStatus != result) {
             if (_connectionStatus != null) {
               //null just to not show message on start.
@@ -31,7 +32,7 @@ class NetworkInformation {
 
   ConnectivityResult? _connectionStatus;
   final Connectivity _connectivity = Connectivity();
-  late StreamSubscription<ConnectivityResult> _connectivitySubscription;
+  late StreamSubscription<List<ConnectivityResult>> _connectivitySubscription;
 
   final wifiIPv4 = ValueNotifier<String>("");
   final outgoingIPv4 = ValueNotifier<String>("");
